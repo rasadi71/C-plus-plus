@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int sum(int a , int b)
+{
+	return a + b;
+}
+/*
+int sum(int a , int b, int c)
+{
+	return a + b + c;
+}*/
+float sum(float a, float b)
+{
+	return a + b;
+}
+
+int main(){
+	
+	int a , b;
+	
+	cout << sum(a,b) << endl;
+	
+	float c = 10.25, d = 10.24;
+	
+	cout << sum(c,d) << endl;
+}
