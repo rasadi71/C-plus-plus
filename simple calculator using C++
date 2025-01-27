@@ -1,0 +1,67 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+float Add(float a , float b)
+{
+	return a + b;
+}
+
+float Sub(float c , float d)
+{
+	return c - d;
+}
+float Mul(float a , float b)
+{
+	int res = a * b;
+	return res;
+}
+
+float Div(float a , float b)
+{
+	if(b == 0)
+	{
+	return -1;
+	}
+	else{
+		return a / b;
+	}
+}
+
+int main()
+{
+	
+	
+	while(1){
+	int option;
+	cout << "1 Add 2 Sub 3 Mul 4 Division 5 Exit";
+	cout << " Choose your option : ";
+	cin >> option;
+	if(option == 5){
+		break;
+	}
+	cout << " Enter your numbers : ";
+	float a , b;
+	cin >> a >> b;
+
+	if(option == 1)
+	{
+		cout << Add(a,b) << endl;
+	}
+	else if(option == 2)
+	{
+		cout << Sub(a,b) << endl;
+	}
+	else if(option == 3)
+	{
+		cout << Mul(a,b) << endl;
+	}
+	else if (option == 4){
+		cout << Div(a,b) << endl;
+	}
+	
+	
+}
+	
+	
+	return 0;
+}
