@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class student{
+
+   public :
+       int id ;
+       string name;
+       float dreamcgpa;
+
+};
+
+
+int main() {
+
+
+    student st[100] ;
+    int arr[100];
+    st[0].id=71;
+    st[0].name="sadi";
+    st[0].dreamcgpa=3.9;
+
+    cout << "id:"<<st[0].id<< endl;
+    cout <<"name:"<< st[0].name<<endl;
+    cout <<"Dream cg:"<<st[0].dreamcgpa<<endl;
+
+}
