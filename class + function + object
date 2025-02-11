@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class student{
+    public:
+        int id;
+        string name;
+        float cgpa;
+        float cgpa_manupulator(float cgpa)
+        {
+            float new_cg=cgpa*4;
+            return new_cg;
+        }
+        void cgpa_manu(float cgpa){
+
+        cout << "adjust cgpa :"<<(float)cgpa*4<< endl;
+        }
+};
+
+int main(){
+    student st1,st2,st3;
+    st1.id=17;
+    st1.name="sadi" ;
+    st1.cgpa=4.00;
+    st1.cgpa_manu(st1.cgpa);
+    cout<< st1.cgpa_manupulation(st1.cgpa);
+
+    cout << st1.id<<endl;
+    cout<<st1.name<<endl;
+    cout<< st1.cgpa<<endl;
+    cout <<endl;
+
+}  
