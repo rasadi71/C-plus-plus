@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class circule
+{
+public:
+    double radius;
+    double compute_area()
+    {
+        return 3.1416*radius*radius ;
+           }
+};
+int main()
+{
+    circule obj;
+    obj.radius=5.5;
+    cout << "radius:" << obj.radius<< endl;
+    cout<<"area" << obj.compute_area()<<endl;
+    return 0 ;
+}
