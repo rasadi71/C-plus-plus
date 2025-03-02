@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class circle
+{
+private:
+    double radius; // ✅ Removed extra curly braces
+
+public:
+    void compute_area(double r)
+    {
+        radius = r;
+        double area = 3.1416 * radius * radius;
+        cout << "Area: " << area << endl;
+        cout << "Radius: " << radius << endl;
+    }
+};
+
+int main()
+{
+    circle obj;  // ✅ Corrected spelling
+    obj.compute_area(1.5);
+    return 0;
+}
